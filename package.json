@@ -1,0 +1,23 @@
+{
+  "name": "discordbot-template",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/drethenrain/discordbot-template.git",
+  "author": "drethenrain <drethenrain@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "sucrase src/ -d dist/ --transforms typescript,imports",
+    "dev": "nodemon src/index.ts",
+    "start": "node ."
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "nodemon": "^2.0.20",
+    "sucrase": "^3.29.0",
+    "typescript": "^4.9.4"
+  }
+}
